@@ -1,17 +1,12 @@
-
 from tkinter import *
 from tkinter import messagebox
-
-
-
 
 def new_window():
     t=Toplevel()
     t.geometry("1250x650")
     t.resizable(0,0)
     t.configure(bg="lightgray")
-
-    
+ 
     def show_data():
 
         txt.delete(0.0,END)
@@ -50,11 +45,7 @@ def new_window():
         
 
         messagebox.showinfo("Thank you ","your railway form has been sumbmited successfully")
-    
-
-
-
-
+ 
     c=StringVar()
     Lb=StringVar()
     tnam=StringVar()
