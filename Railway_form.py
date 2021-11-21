@@ -141,9 +141,6 @@ def new_window():
     Lb.insert(10, "sabji puri")
 
 
-
-
-
 t=Tk()
 
 t.title("IRCTC")
@@ -154,18 +151,13 @@ t.geometry("400x200")
 
 t.configure(bg="lightgray")
 
-
 l=Label(t,text = "UserName",font=("bold",15),bg="lightgray").place(x=20,y=20)
 l= Entry(t,width=25,textvariable=uname).place(x=150,y=20)
-
-
 
 l= Label(t,text = "Password",font=("bold",15),bg="lightgray").place(x=20,y=80)
 l= Entry(t,width=25, show ="*" ,textvariable=passwd,).place(x=150,y=80)
 
 BU=Button(t,text = "Log in",font=("bold",15),bg="lightgray",command=new_window).place(x=120,y=150)
 BU=Button(t,text = "Cancel",font=("bold",15),bg="lightgray",command=t.destroy).place(x=190,y=150)
-
-
 
 t.mainloop()
